@@ -23,6 +23,10 @@
   <button class="purple" onclick=javascrtpt:jump()>我们的未来</button>
 </div>
 
+<audio controls preload autoplay loop id="lottery">
+     <source src="./video/love.mp3" type="audio/mpeg">
+</audio>
+
 
 
 <script src="js/index.js"></script>
@@ -35,6 +39,25 @@ function jump2(){
  window.location.href="./showtime/demo.html";
 }
 </script>
+
+
+ 
+ 
+<script type="text/javascript">
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+ 
+    function toggleSound() {
+                var music = document.getElementById("lottery");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+</script>
+
 
 </body>
 </html>
