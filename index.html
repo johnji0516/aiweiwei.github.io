@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=yes">
     <title>嫁给我吧</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
 <div class="textCon">
-        <div class="words">我爱你,郭微</div>
+        <div class="words">我们相遇啦</div>
 		<div class="heart"></div>
         <div class="days">
             <span class="days-number">1921</span>
@@ -18,14 +19,22 @@
 </div>
 
 <div id="frozen-btn">
-  <button class="green">我们的故事</button>
-  <button class="purple">我们的未来</button>
+  <button class="green"  onclick=javascrtpt:jump2()>我们的故事</button>
+  <button class="purple" onclick=javascrtpt:jump()>我们的未来</button>
 </div>
 
 
 
 <script src="js/index.js"></script>
 <script src="js/love.js"></script>
+<script>
+function jump(){
+ window.location.href="./history/index.html";
+}
+function jump2(){
+ window.location.href="./showtime/demo.html";
+}
+</script>
 
 </body>
 </html>
