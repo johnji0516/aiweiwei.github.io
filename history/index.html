@@ -16,6 +16,20 @@
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/ipresenter.packed.js"></script>
 <script type="text/javascript">
+
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+ 
+    function toggleSound() {
+                var music = document.getElementById("lottery");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+
 $(document).ready(function(){
 	$('#ipresenter').iPresenter({
 		animSpeed: 2000,
@@ -72,6 +86,10 @@ $(document).ready(function(){
 		</div>
 	</div>
 </div>
+
+<audio  preload autoplay loop id="lottery">
+     <source src="http://mp.333ttt.com/mp3music/8131628.mp3" type="audio/mpeg">
+</audio>
 
 </body>
 </html>
