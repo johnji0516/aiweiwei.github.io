@@ -1,174 +1,77 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>jQuery全屏圆形导航轮播图布局特效</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>iPresenter相册3D插件</title>
+
 </head>
 <body>
 
-	<!-- coidea:loader START -->
-    <div class="loader">
-      <div class="lds-ripple">
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <!-- coidea:loader END -->
 
 
-    <!-- slideshow START -->
-    <section class="slideshow">
+<link rel="stylesheet" href="css/style.css" />
 
-      <!-- slideshow:navigation START -->
-      <ul class="navigation">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/ipresenter.packed.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#ipresenter').iPresenter({
+		animSpeed: 2000,
+		timer: '360Bar',
+		timerDiameter: 60,
+		timerStroke: 5,
+		timerPadding: 5,
+		timerColor: '#000',
+		timerBg: '#FFF',
+		timerOpacity: 0.4,
+		directionNav: false,
+		controlNav: true
+	});
+});
+</script>
 
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item active">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-1.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
+<div class="container">
+	<div id="ipresenter">
+		<div class="step" data-x="0" data-y="0" data-thumbnail="images/thumbs/16.jpg">
+			<img src="images/photos/16.jpg" />
+		</div>
+		<div class="step" data-x="1500" data-y="0" data-rotatex="180" data-easing="easeInOutQuint" data-pausetime="15000" data-thumbnail="images/thumbs/1.jpg">
+			<img src="images/photos/1.jpg" />
+		</div>
+		<div class="step" data-x="3000" data-y="0" data-rotatey="180" data-pausetime="2000" data-thumbnail="images/thumbs/2.jpg">
+			<img src="images/photos/2.jpg" />
+		</div>
+		<div class="step" data-x="4500" data-y="0" data-rotatex="180" data-thumbnail="images/thumbs/3.jpg">
+			<img src="images/photos/3.jpg" />
+		</div>
+		<div class="step" data-x="6000" data-y="0" data-rotate="180" data-thumbnail="images/thumbs/4.jpg">
+			<img src="images/photos/4.jpg" />
+		</div>
+		<div class="step" data-x="7500" data-y="0" data-rotatey="180" data-thumbnail="images/thumbs/5.jpg">
+			<img src="images/photos/5.jpg" />
+		</div>
+		<div class="step" data-x="9000" data-y="0" data-thumbnail="images/thumbs/6.jpg">
+			<img src="images/photos/6.jpg" />
+		</div>
+		<div class="step" data-x="10500" data-y="0" data-rotate="80" data-thumbnail="images/thumbs/7.jpg">
+			<img src="images/photos/7.jpg" />
+		</div>
+		<div class="step" data-x="12000" data-y="0" data-rotatex="180" data-thumbnail="images/thumbs/8.jpg">
+			<img src="images/photos/8.jpg" />
+		</div>
+		<div class="step" data-x="13500" data-y="0" data-rotatey="180" data-scale="0.6" data-thumbnail="images/thumbs/9.jpg">
+			<img src="images/photos/9.jpg" />
+		</div>
+		<div class="step" data-x="15000" data-y="0" data-rotatey="-180" data-thumbnail="images/thumbs/10.jpg">
+			<img src="images/photos/10.jpg" />
+		</div>
+		<div class="step" data-x="16500" data-y="0" data-rotatey="180" data-thumbnail="images/thumbs/11.jpg">
+			<img src="images/photos/11.jpg" />
+		</div>
+	</div>
+</div>
 
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-2.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-3.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-4.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-5.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-6.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-7.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-8.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-        <!-- slideshow:navigation:item START -->
-        <li class="navigation-item">
-          <span class="rotate-holder"></span>
-          <span class="background-holder" style="background-image: url(assets/img/img-9.jpeg);"></span>
-        </li>
-        <!-- slideshow:navigation:item END -->
-
-      </ul>
-      <!-- slideshow:navigation END -->
-
-
-      <!-- slideshow:details START -->
-      <div class="detail">
-      
-        <!-- slideshow:details START -->
-        <div class="detail-item active">
-          <div class="headline">Amsterdam</div>
-          <div class="background" style="background-image: url(assets/img/img-1.jpeg)"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Rome</div>
-          <div class="background" style="background-image: url(assets/img/img-2.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Paris</div>
-          <div class="background" style="background-image: url(assets/img/img-3.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Prague</div>
-          <div class="background" style="background-image: url(assets/img/img-4.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Moscow</div>
-          <div class="background" style="background-image: url(assets/img/img-5.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Kyoto</div>
-          <div class="background" style="background-image: url(assets/img/img-6.jpeg);"></div> 
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Sydney</div>
-          <div class="background" style="background-image: url(assets/img/img-7.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Istanbul</div>
-          <div class="background" style="background-image: url(assets/img/img-8.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-        <!-- slideshow:details START -->
-        <div class="detail-item">
-          <div class="headline">Hong Kong</div>
-          <div class="background" style="background-image: url(assets/img/img-9.jpeg);"></div>
-        </div>
-        <!-- slideshow:details END -->
-        
-      </div>
-      <!-- slideshow:details END -->
-
-    </section>
-    <!-- slideshow END -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/TweenMax.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/CSSPlugin.min.js"></script>
-    <script src="assets/js/TextPlugin.min.js"></script>
-    <script src="assets/js/demo.js"></script>
-	
 </body>
 </html>
